@@ -1,55 +1,15 @@
-<div class=' text-center'>
-<h1>Header</h1>
+
+<div class='row get-upload-form'>
+  <div class="get-upload-form col-xs-8 col-xs-offset-2 col-sm-offset-3 col-sm-6 col-md-4 col-md-offset-4">
+    <a class='btn btn-lg btn-default btn-block' href='/uploads/new'>Add an Image</a>
+  </div>
 </div>
 
-<div class='row'>
-  <div class="col-md-4 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 text-center">
-    <h2>Photo 1</h2>
-    <img src="https://bwwepw.bl3301.livefilestore.com/y3mdRBiqL2xRpnxquMHBM4wuNDVYG3R4130wAOLysUQNWIVvU5WyQ8ZREHeJyOD-jPxHCKQJkMXeTEDSxtqnPhJUVmkHsHEYCCj0m4pHl0GG4segm9fQJCgmGUg_5w8tbzjb4L4hL4jHGVsWhsR_z8-Av7PxzuSMpVk-5u81N8u1Dc?width=1801&height=1349&cropmode=none" width="1801" height="1349" />
-    <hr>
-    <p>Description: fjdsklfghsdjkfhsldjkfhsdjklfhdsjklfhjksdlhflsd</p>
+<div class='row uploads'>
+<% @uploads.each do |upload| %>
+  <div class="col-lg-6 text-center">
+    <img src="<%= upload.link %>" width='250' height='250'>
+    <h2><%= upload.description %></h2>
   </div>
-
-  <div class="col-md-4 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 text-center">
-    <h2>Photo 1</h2>
-    <img src="https://bwwepw.bl3301.livefilestore.com/y3mdRBiqL2xRpnxquMHBM4wuNDVYG3R4130wAOLysUQNWIVvU5WyQ8ZREHeJyOD-jPxHCKQJkMXeTEDSxtqnPhJUVmkHsHEYCCj0m4pHl0GG4segm9fQJCgmGUg_5w8tbzjb4L4hL4jHGVsWhsR_z8-Av7PxzuSMpVk-5u81N8u1Dc?width=1801&height=1349&cropmode=none" width="250" height="250" />
-    <hr>
-    <p>Description: fjdsklfghsdjkfhsldjkfhsdjklfhdsjklfhjksdlhflsd</p>
-  </div>
-  <div class="col-md-4 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 text-center">
-    <h2>Photo 1</h2>
-    <img src="https://bwwepw.bl3301.livefilestore.com/y3mdRBiqL2xRpnxquMHBM4wuNDVYG3R4130wAOLysUQNWIVvU5WyQ8ZREHeJyOD-jPxHCKQJkMXeTEDSxtqnPhJUVmkHsHEYCCj0m4pHl0GG4segm9fQJCgmGUg_5w8tbzjb4L4hL4jHGVsWhsR_z8-Av7PxzuSMpVk-5u81N8u1Dc?width=1801&height=1349&cropmode=none" width="250" height="250" />
-    <hr>
-    <p>Description: fjdsklfghsdjkfhsldjkfhsdjklfhdsjklfhjksdlhflsd</p>
-  </div>
-  <div class="col-md-4 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 text-center">
-    <h2>Photo 1</h2>
-    <img src="https://bwwepw.bl3301.livefilestore.com/y3mdRBiqL2xRpnxquMHBM4wuNDVYG3R4130wAOLysUQNWIVvU5WyQ8ZREHeJyOD-jPxHCKQJkMXeTEDSxtqnPhJUVmkHsHEYCCj0m4pHl0GG4segm9fQJCgmGUg_5w8tbzjb4L4hL4jHGVsWhsR_z8-Av7PxzuSMpVk-5u81N8u1Dc?width=1801&height=1349&cropmode=none" width="250" height="250" />
-    <hr>
-    <p>Description: fjdsklfghsdjkfhsldjkfhsdjklfhdsjklfhjksdlhflsd</p>
-  </div>
-  <div class="col-md-4 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 text-center">
-    <h2>Photo 1</h2>
-    <img src="https://bwwepw.bl3301.livefilestore.com/y3mdRBiqL2xRpnxquMHBM4wuNDVYG3R4130wAOLysUQNWIVvU5WyQ8ZREHeJyOD-jPxHCKQJkMXeTEDSxtqnPhJUVmkHsHEYCCj0m4pHl0GG4segm9fQJCgmGUg_5w8tbzjb4L4hL4jHGVsWhsR_z8-Av7PxzuSMpVk-5u81N8u1Dc?width=1801&height=1349&cropmode=none" width="250" height="250" />
-    <hr>
-    <p>Description: fjdsklfghsdjkfhsldjkfhsdjklfhdsjklfhjksdlhflsd</p>
-  </div>
-  <div class="col-md-4 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 text-center">
-    <h2>Photo 1</h2>
-    <img src="https://bwwepw.bl3301.livefilestore.com/y3mdRBiqL2xRpnxquMHBM4wuNDVYG3R4130wAOLysUQNWIVvU5WyQ8ZREHeJyOD-jPxHCKQJkMXeTEDSxtqnPhJUVmkHsHEYCCj0m4pHl0GG4segm9fQJCgmGUg_5w8tbzjb4L4hL4jHGVsWhsR_z8-Av7PxzuSMpVk-5u81N8u1Dc?width=1801&height=1349&cropmode=none" width="250" height="250" />
-    <hr>
-    <p>Description: fjdsklfghsdjkfhsldjkfhsdjklfhdsjklfhjksdlhflsd</p>
-  </div>
-  <div class="col-md-4 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 text-center">
-    <h2>Photo 1</h2>
-    <img src="https://bwwepw.bl3301.livefilestore.com/y3mdRBiqL2xRpnxquMHBM4wuNDVYG3R4130wAOLysUQNWIVvU5WyQ8ZREHeJyOD-jPxHCKQJkMXeTEDSxtqnPhJUVmkHsHEYCCj0m4pHl0GG4segm9fQJCgmGUg_5w8tbzjb4L4hL4jHGVsWhsR_z8-Av7PxzuSMpVk-5u81N8u1Dc?width=1801&height=1349&cropmode=none" width="250" height="250" />
-    <hr>
-    <p>Description: fjdsklfghsdjkfhsldjkfhsdjklfhdsjklfhjksdlhflsd</p>
-  </div>
-  <div class="col-md-4 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 text-center" >
-    <h2>Photo 1</h2>
-    <img src="https://bwwepw.bl3301.livefilestore.com/y3mdRBiqL2xRpnxquMHBM4wuNDVYG3R4130wAOLysUQNWIVvU5WyQ8ZREHeJyOD-jPxHCKQJkMXeTEDSxtqnPhJUVmkHsHEYCCj0m4pHl0GG4segm9fQJCgmGUg_5w8tbzjb4L4hL4jHGVsWhsR_z8-Av7PxzuSMpVk-5u81N8u1Dc?width=1801&height=1349&cropmode=none" width="250" height="250" />
-    <hr>
-    <p>Description: fjdsklfghsdjkfhsldjkfhsdjklfhdsjklfhjksdlhflsd</p>
-  </div>
+<% end %>
 </div>
