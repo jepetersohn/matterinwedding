@@ -38,6 +38,7 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
           <% if !logged_in? %>
+          
               <%= erb :'partials/_nav_logged_in', layout: false %>
           <% else %>
               <%= erb :'partials/_nav_logged_out', layout: false %>
