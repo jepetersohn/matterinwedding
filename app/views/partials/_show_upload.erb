@@ -1,0 +1,12 @@
+<div class='upload'>
+  <meta property="og:url"                content="<%= upload.link %>" />
+  <meta property="og:type"               content="image" />
+  <meta property="og:description"        content="<%= upload.description %>" />
+  <meta property="og:image"              content="<%= upload.link %>" />
+  <div class="col-lg-6 text-center">
+    <img src="<%= upload.link %>" width='250' height='250'>
+  <h2><%= upload.description %>&nbsp;
+    <div class="fb-share-button" data-href="<%= upload.link %>" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="<%= upload.link %>">Share</a></div>
+  </h2>
+  </div>
+</div>
