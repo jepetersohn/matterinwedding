@@ -13,3 +13,33 @@
 #upload-form {
 	margin-bottom: 60px;
 }
+
+.engagement-image {
+  background: black url("https://media.xogrp.com/images/227bc2b7-d7bc-4e49-a62b-e8b1a0de10b1~rt_auto") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hero {
+  height: 80vh;
+  max-height: 600px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-centered {
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-heading {
+  font-family: "Homemade Apple";
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
