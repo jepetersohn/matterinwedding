@@ -1,0 +1,7 @@
+<li><a href='/'><%= auth_user.email %></a></li>
+            <li>
+              <form action="/sessions" method="POST">
+                <input type="hidden" name="_method" value="DELETE">
+                <input id="logout-button" type="submit" value="Logout">
+              </form>
+            </li>
