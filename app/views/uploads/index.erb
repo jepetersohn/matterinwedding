@@ -1,24 +1,11 @@
-
-<div class='row get-upload-form'>
-  <div class="get-upload-form col-xs-8 col-xs-offset-2 col-sm-offset-3 col-sm-6 col-md-4 col-md-offset-4">
-    <a class='btn btn-lg btn-default btn-block' href='/uploads/new'>Add an Image</a>
-  </div>
-</div>
-
-<div class='row uploads'>
-<% @uploads.each do |upload| %>
-  <meta property="og:url"                content="<%= upload.link %>" />
-  <meta property="og:type"               content="image" />
-  <meta property="og:description"        content="<%= upload.description %>" />
-  <meta property="og:image"              content="<%= upload.link %>" />
-  <div class="col-lg-6 text-center">
-    <img src="<%= upload.link %>" width='250' height='250'>
-  <h2><%= upload.description %>&nbsp;
-    <div class="fb-share-button" data-href="<%= upload.link %>" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="<%= upload.link %>">Share</a></div>
-  </h2>
-  </div>
-<% end %>
+<div class="row" id="registration-div">
 </div>
 
 
+<div class="row" id="upload-form-div">
+  <%= erb :'partials/_get_upload_form', layout: false %>
+</div>
 
+<div class='row' id='uploads'>
+  <%= erb :'partials/_upload_loop', layout: false, locals: { uploads: @uploads } %>
+</div>
